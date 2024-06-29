@@ -16,8 +16,6 @@ public class Mapper {
         card.setNumber(Long.parseLong(cardDTO.getNumber()));
         card.setName(cardDTO.getName());
 
-        System.out.println(card);
-
         return card;
     }
 

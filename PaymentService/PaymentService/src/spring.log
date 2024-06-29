@@ -1,0 +1,419 @@
+2024-06-29T15:16:40.067+03:00  INFO 24533 --- [PaymentService] [main] o.e.paymentservice.util.MapperTest       : Starting MapperTest using Java 22.0.1 with PID 24533 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T15:16:40.068+03:00  INFO 24533 --- [PaymentService] [main] o.e.paymentservice.util.MapperTest       : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T15:16:41.004+03:00  INFO 24533 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T15:16:41.051+03:00  INFO 24533 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2024-06-29T15:16:41.762+03:00  INFO 24533 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T15:16:41.812+03:00  INFO 24533 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T15:16:41.851+03:00  INFO 24533 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T15:16:42.157+03:00  INFO 24533 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T15:16:42.180+03:00  INFO 24533 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T15:16:42.269+03:00  INFO 24533 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28ce75ec
+2024-06-29T15:16:42.270+03:00  INFO 24533 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T15:16:43.197+03:00  INFO 24533 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T15:16:43.297+03:00  INFO 24533 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:16:43.947+03:00  WARN 24533 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T15:16:44.870+03:00  INFO 24533 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T15:16:44.950+03:00  INFO 24533 --- [PaymentService] [main] o.e.paymentservice.util.MapperTest       : Started MapperTest in 5.316 seconds (process running for 6.358)
+2024-06-29T15:16:45.565+03:00  INFO 24533 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:16:45.567+03:00  INFO 24533 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T15:16:45.574+03:00  INFO 24533 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T15:27:11.207+03:00  INFO 25633 --- [PaymentService] [main] o.e.p.service.BankServiceSpringBootTest  : Starting BankServiceSpringBootTest using Java 22.0.1 with PID 25633 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T15:27:11.209+03:00  INFO 25633 --- [PaymentService] [main] o.e.p.service.BankServiceSpringBootTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T15:27:12.141+03:00  INFO 25633 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T15:27:12.193+03:00  INFO 25633 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-06-29T15:27:13.917+03:00  INFO 25633 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T15:27:13.992+03:00  INFO 25633 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T15:27:14.039+03:00  INFO 25633 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T15:27:14.225+03:00  INFO 25633 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T15:27:14.264+03:00  INFO 25633 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T15:27:14.368+03:00  INFO 25633 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39f68aec
+2024-06-29T15:27:14.370+03:00  INFO 25633 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T15:27:15.339+03:00  INFO 25633 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T15:27:15.434+03:00  INFO 25633 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:27:16.115+03:00  WARN 25633 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T15:27:16.985+03:00  INFO 25633 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T15:27:17.061+03:00  INFO 25633 --- [PaymentService] [main] o.e.p.service.BankServiceSpringBootTest  : Started BankServiceSpringBootTest in 6.259 seconds (process running for 7.342)
+2024-06-29T15:27:17.290+03:00  INFO 25633 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:27:17.293+03:00  INFO 25633 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T15:27:17.300+03:00  INFO 25633 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T15:35:26.675+03:00  INFO 26540 --- [PaymentService] [main] o.e.p.service.CardServiceSpringBootTest  : Starting CardServiceSpringBootTest using Java 22.0.1 with PID 26540 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T15:35:26.677+03:00  INFO 26540 --- [PaymentService] [main] o.e.p.service.CardServiceSpringBootTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T15:35:27.591+03:00  INFO 26540 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T15:35:27.640+03:00  INFO 26540 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-06-29T15:35:29.413+03:00  INFO 26540 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T15:35:29.474+03:00  INFO 26540 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T15:35:29.511+03:00  INFO 26540 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T15:35:29.652+03:00  INFO 26540 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T15:35:29.681+03:00  INFO 26540 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T15:35:29.785+03:00  INFO 26540 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1feb76b9
+2024-06-29T15:35:29.787+03:00  INFO 26540 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T15:35:30.766+03:00  INFO 26540 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T15:35:30.858+03:00  INFO 26540 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:35:31.155+03:00  WARN 26540 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T15:35:32.430+03:00  INFO 26540 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T15:35:32.515+03:00  INFO 26540 --- [PaymentService] [main] o.e.p.service.CardServiceSpringBootTest  : Started CardServiceSpringBootTest in 6.205 seconds (process running for 7.328)
+2024-06-29T15:35:32.750+03:00  INFO 26540 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T15:35:32.754+03:00  INFO 26540 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T15:35:32.761+03:00  INFO 26540 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:02:29.800+03:00  INFO 29482 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Starting ServiceControllerTest using Java 22.0.1 with PID 29482 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:02:29.802+03:00  INFO 29482 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:02:31.969+03:00  INFO 29482 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:02:31.969+03:00  INFO 29482 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:02:31.971+03:00  INFO 29482 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2024-06-29T16:02:32.000+03:00  INFO 29482 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Started ServiceControllerTest in 2.681 seconds (process running for 3.768)
+2024-06-29T16:02:59.176+03:00  INFO 29616 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 29616 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:02:59.178+03:00  INFO 29616 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:03:00.201+03:00  INFO 29616 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:03:00.254+03:00  INFO 29616 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:03:01.904+03:00  INFO 29616 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:03:01.977+03:00  INFO 29616 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:03:02.017+03:00  INFO 29616 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:03:02.171+03:00  INFO 29616 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:03:02.203+03:00  INFO 29616 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:03:02.327+03:00  INFO 29616 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17332039
+2024-06-29T16:03:02.330+03:00  INFO 29616 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:03:03.367+03:00  INFO 29616 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:03:03.471+03:00  INFO 29616 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:03:04.157+03:00  WARN 29616 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:03:05.074+03:00  INFO 29616 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:03:05.074+03:00  INFO 29616 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:03:05.091+03:00  INFO 29616 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:03:05.108+03:00  INFO 29616 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 34 ms
+2024-06-29T16:03:05.179+03:00  INFO 29616 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.44 seconds (process running for 7.628)
+2024-06-29T16:03:05.521+03:00  INFO 29616 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:03:05.524+03:00  INFO 29616 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:03:05.530+03:00  INFO 29616 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:07:14.581+03:00  INFO 29980 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 29980 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:07:14.583+03:00  INFO 29980 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:07:15.546+03:00  INFO 29980 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:07:15.597+03:00  INFO 29980 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:07:17.265+03:00  INFO 29980 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:07:17.316+03:00  INFO 29980 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:07:17.352+03:00  INFO 29980 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:07:17.502+03:00  INFO 29980 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:07:17.537+03:00  INFO 29980 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:07:17.645+03:00  INFO 29980 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d5cd210
+2024-06-29T16:07:17.647+03:00  INFO 29980 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:07:18.635+03:00  INFO 29980 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:07:18.729+03:00  INFO 29980 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:07:19.426+03:00  WARN 29980 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:07:20.358+03:00  INFO 29980 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:07:20.359+03:00  INFO 29980 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:07:20.374+03:00  INFO 29980 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:07:20.396+03:00  INFO 29980 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 37 ms
+2024-06-29T16:07:20.470+03:00  INFO 29980 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.305 seconds (process running for 7.432)
+2024-06-29T16:07:20.820+03:00  INFO 29980 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:07:20.823+03:00  INFO 29980 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:07:20.829+03:00  INFO 29980 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:07:36.360+03:00  INFO 30106 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Starting ServiceControllerTest using Java 22.0.1 with PID 30106 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:07:36.362+03:00  INFO 30106 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:07:37.289+03:00  INFO 30106 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:07:37.338+03:00  INFO 30106 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:07:39.247+03:00  INFO 30106 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:07:39.307+03:00  INFO 30106 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:07:39.342+03:00  INFO 30106 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:07:39.481+03:00  INFO 30106 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:07:39.511+03:00  INFO 30106 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:07:39.639+03:00  INFO 30106 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c56c911
+2024-06-29T16:07:39.641+03:00  INFO 30106 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:07:40.685+03:00  INFO 30106 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:07:40.772+03:00  INFO 30106 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:07:41.048+03:00  WARN 30106 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:07:42.341+03:00  INFO 30106 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:07:42.342+03:00  INFO 30106 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:07:42.355+03:00  INFO 30106 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:07:42.375+03:00  INFO 30106 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 32 ms
+2024-06-29T16:07:42.459+03:00  INFO 30106 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Started ServiceControllerTest in 6.487 seconds (process running for 7.627)
+2024-06-29T16:07:42.840+03:00  INFO 30106 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:07:42.842+03:00  INFO 30106 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:07:42.852+03:00  INFO 30106 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:08:18.441+03:00  INFO 30228 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Starting ServiceControllerTest using Java 22.0.1 with PID 30228 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:08:18.443+03:00  INFO 30228 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:08:19.580+03:00  INFO 30228 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:08:19.654+03:00  INFO 30228 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:08:21.768+03:00  INFO 30228 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:08:21.837+03:00  INFO 30228 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:08:21.880+03:00  INFO 30228 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:08:22.057+03:00  INFO 30228 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:08:22.093+03:00  INFO 30228 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:08:22.236+03:00  INFO 30228 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@af04f09
+2024-06-29T16:08:22.239+03:00  INFO 30228 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:08:23.399+03:00  INFO 30228 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:08:23.516+03:00  INFO 30228 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:08:23.818+03:00  WARN 30228 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:08:25.305+03:00  INFO 30228 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:08:25.305+03:00  INFO 30228 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:08:25.326+03:00  INFO 30228 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:08:25.352+03:00  INFO 30228 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 47 ms
+2024-06-29T16:08:25.457+03:00  INFO 30228 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Started ServiceControllerTest in 7.549 seconds (process running for 8.979)
+2024-06-29T16:09:32.438+03:00  WARN 30228 --- [PaymentService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s98ms648µs173ns).
+2024-06-29T16:09:32.481+03:00  INFO 30228 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:09:32.485+03:00  INFO 30228 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:09:32.495+03:00  INFO 30228 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:09:38.632+03:00  INFO 30394 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Starting ServiceControllerTest using Java 22.0.1 with PID 30394 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:09:38.634+03:00  INFO 30394 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:09:39.568+03:00  INFO 30394 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:09:39.616+03:00  INFO 30394 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:09:41.444+03:00  INFO 30394 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:09:41.506+03:00  INFO 30394 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:09:41.551+03:00  INFO 30394 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:09:41.699+03:00  INFO 30394 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:09:41.728+03:00  INFO 30394 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:09:41.832+03:00  INFO 30394 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ec37a42
+2024-06-29T16:09:41.834+03:00  INFO 30394 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:09:42.804+03:00  INFO 30394 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:09:42.906+03:00  INFO 30394 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:09:43.169+03:00  WARN 30394 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:09:44.522+03:00  INFO 30394 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:09:44.523+03:00  INFO 30394 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:09:44.540+03:00  INFO 30394 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:09:44.558+03:00  INFO 30394 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 35 ms
+2024-06-29T16:09:44.629+03:00  INFO 30394 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Started ServiceControllerTest in 6.385 seconds (process running for 7.489)
+2024-06-29T16:09:45.079+03:00  INFO 30394 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:09:45.083+03:00  INFO 30394 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:09:45.090+03:00  INFO 30394 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:10:30.179+03:00  INFO 30577 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Starting ServiceControllerTest using Java 22.0.1 with PID 30577 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:10:30.181+03:00  INFO 30577 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:10:31.182+03:00  INFO 30577 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:10:31.233+03:00  INFO 30577 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:10:33.149+03:00  INFO 30577 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:10:33.216+03:00  INFO 30577 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:10:33.251+03:00  INFO 30577 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:10:33.387+03:00  INFO 30577 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:10:33.416+03:00  INFO 30577 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:10:33.528+03:00  INFO 30577 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@443253a6
+2024-06-29T16:10:33.530+03:00  INFO 30577 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:10:34.515+03:00  INFO 30577 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:10:34.615+03:00  INFO 30577 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:10:34.956+03:00  WARN 30577 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:10:36.288+03:00  INFO 30577 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:10:36.289+03:00  INFO 30577 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:10:36.302+03:00  INFO 30577 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:10:36.320+03:00  INFO 30577 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 31 ms
+2024-06-29T16:10:36.389+03:00  INFO 30577 --- [PaymentService] [main] o.e.p.controllers.ServiceControllerTest  : Started ServiceControllerTest in 6.652 seconds (process running for 7.766)
+2024-06-29T16:10:36.778+03:00  INFO 30577 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:10:36.780+03:00  INFO 30577 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:10:36.787+03:00  INFO 30577 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:12:56.139+03:00  INFO 30812 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 30812 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:12:56.141+03:00  INFO 30812 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:12:57.098+03:00  INFO 30812 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:12:57.161+03:00  INFO 30812 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:12:58.809+03:00  INFO 30812 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:12:58.880+03:00  INFO 30812 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:12:58.923+03:00  INFO 30812 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:12:59.074+03:00  INFO 30812 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:12:59.103+03:00  INFO 30812 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:12:59.211+03:00  INFO 30812 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a247711
+2024-06-29T16:12:59.213+03:00  INFO 30812 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:13:00.222+03:00  INFO 30812 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:13:00.309+03:00  INFO 30812 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:13:00.938+03:00  WARN 30812 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:13:01.886+03:00  INFO 30812 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:13:01.887+03:00  INFO 30812 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:13:01.904+03:00  INFO 30812 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:13:01.926+03:00  INFO 30812 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2024-06-29T16:13:02.012+03:00  INFO 30812 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.285 seconds (process running for 7.394)
+2024-06-29T16:13:02.368+03:00  INFO 30812 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:13:02.371+03:00  INFO 30812 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:13:02.377+03:00  INFO 30812 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:16:53.373+03:00  INFO 31052 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 31052 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:16:53.377+03:00  INFO 31052 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:16:54.847+03:00  INFO 31052 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:16:54.961+03:00  INFO 31052 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:16:57.954+03:00  INFO 31052 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:16:58.074+03:00  INFO 31052 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:16:58.149+03:00  INFO 31052 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:16:58.487+03:00  INFO 31052 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:16:58.557+03:00  INFO 31052 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:16:58.836+03:00  INFO 31052 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11ce9319
+2024-06-29T16:16:58.840+03:00  INFO 31052 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:17:00.587+03:00  INFO 31052 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:17:00.735+03:00  INFO 31052 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:17:01.861+03:00  WARN 31052 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:17:03.433+03:00  INFO 31052 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:17:03.434+03:00  INFO 31052 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:17:03.462+03:00  INFO 31052 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:17:03.486+03:00  INFO 31052 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 52 ms
+2024-06-29T16:17:03.745+03:00  INFO 31052 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 11.21 seconds (process running for 13.456)
+2024-06-29T16:21:11.037+03:00  WARN 31052 --- [PaymentService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m12s96ms74µs839ns).
+2024-06-29T16:21:11.074+03:00  INFO 31052 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:21:11.076+03:00  INFO 31052 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:21:11.085+03:00  INFO 31052 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:32:17.958+03:00  INFO 32134 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 32134 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:32:17.960+03:00  INFO 32134 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:32:18.976+03:00  INFO 32134 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:32:19.025+03:00  INFO 32134 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:32:20.673+03:00  INFO 32134 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:32:20.728+03:00  INFO 32134 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:32:20.765+03:00  INFO 32134 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:32:20.919+03:00  INFO 32134 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:32:20.956+03:00  INFO 32134 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:32:21.068+03:00  INFO 32134 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2052f095
+2024-06-29T16:32:21.070+03:00  INFO 32134 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:32:22.064+03:00  INFO 32134 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:32:22.179+03:00  INFO 32134 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:32:22.490+03:00  WARN 32134 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:32:23.806+03:00  INFO 32134 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:32:23.806+03:00  INFO 32134 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:32:23.820+03:00  INFO 32134 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:32:23.840+03:00  INFO 32134 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 34 ms
+2024-06-29T16:32:23.916+03:00  INFO 32134 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.382 seconds (process running for 7.548)
+2024-06-29T16:32:24.281+03:00  INFO 32134 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:32:24.285+03:00  INFO 32134 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:32:24.308+03:00  INFO 32134 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T16:58:04.684+03:00  INFO 33659 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 33659 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T16:58:04.686+03:00  INFO 33659 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T16:58:05.720+03:00  INFO 33659 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T16:58:05.771+03:00  INFO 33659 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-06-29T16:58:07.371+03:00  INFO 33659 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T16:58:07.430+03:00  INFO 33659 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T16:58:07.466+03:00  INFO 33659 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T16:58:07.611+03:00  INFO 33659 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T16:58:07.641+03:00  INFO 33659 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T16:58:07.745+03:00  INFO 33659 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69d021c1
+2024-06-29T16:58:07.747+03:00  INFO 33659 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T16:58:08.782+03:00  INFO 33659 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T16:58:08.887+03:00  INFO 33659 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:58:09.210+03:00  WARN 33659 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T16:58:10.431+03:00  INFO 33659 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T16:58:10.432+03:00  INFO 33659 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T16:58:10.447+03:00  INFO 33659 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T16:58:10.467+03:00  INFO 33659 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 35 ms
+2024-06-29T16:58:10.546+03:00  INFO 33659 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.291 seconds (process running for 7.509)
+2024-06-29T16:58:10.924+03:00  INFO 33659 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T16:58:10.928+03:00  INFO 33659 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T16:58:10.935+03:00  INFO 33659 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:00:45.744+03:00  INFO 33895 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 33895 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:00:45.747+03:00  INFO 33895 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:00:47.150+03:00  INFO 33895 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:00:47.265+03:00  INFO 33895 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:00:50.229+03:00  INFO 33895 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:00:50.344+03:00  INFO 33895 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:00:50.425+03:00  INFO 33895 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:00:50.753+03:00  INFO 33895 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:00:50.811+03:00  INFO 33895 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:00:51.061+03:00  INFO 33895 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c6244e7
+2024-06-29T17:00:51.066+03:00  INFO 33895 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:00:52.808+03:00  INFO 33895 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:00:52.958+03:00  INFO 33895 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:00:53.379+03:00  WARN 33895 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:00:55.637+03:00  INFO 33895 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:00:55.638+03:00  INFO 33895 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:00:55.670+03:00  INFO 33895 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:00:55.701+03:00  INFO 33895 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 63 ms
+2024-06-29T17:00:55.873+03:00  INFO 33895 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 10.957 seconds (process running for 13.157)
+2024-06-29T17:03:39.949+03:00  WARN 33895 --- [PaymentService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m48s780ms801µs95ns).
+2024-06-29T17:05:47.227+03:00  WARN 33895 --- [PaymentService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m7s279ms761µs736ns).
+2024-06-29T17:05:47.282+03:00  INFO 33895 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:05:47.285+03:00  INFO 33895 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:05:47.291+03:00  INFO 33895 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:05:53.566+03:00  INFO 34203 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 34203 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:05:53.567+03:00  INFO 34203 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:05:54.651+03:00  INFO 34203 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:05:54.710+03:00  INFO 34203 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:05:56.428+03:00  INFO 34203 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:05:56.500+03:00  INFO 34203 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:05:56.535+03:00  INFO 34203 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:05:56.691+03:00  INFO 34203 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:05:56.727+03:00  INFO 34203 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:05:56.846+03:00  INFO 34203 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fd9e01c
+2024-06-29T17:05:56.848+03:00  INFO 34203 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:05:58.046+03:00  INFO 34203 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:05:58.178+03:00  INFO 34203 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:05:58.514+03:00  WARN 34203 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:05:59.819+03:00  INFO 34203 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:05:59.820+03:00  INFO 34203 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:05:59.836+03:00  INFO 34203 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:05:59.855+03:00  INFO 34203 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 35 ms
+2024-06-29T17:05:59.934+03:00  INFO 34203 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.766 seconds (process running for 7.892)
+2024-06-29T17:06:00.286+03:00  INFO 34203 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:06:00.288+03:00  INFO 34203 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:06:00.294+03:00  INFO 34203 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:10:38.291+03:00  INFO 34594 --- [PaymentService] [main] o.e.p.c.ServiceControllerSpringBootTest  : Starting ServiceControllerSpringBootTest using Java 22.0.1 with PID 34594 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:10:38.293+03:00  INFO 34594 --- [PaymentService] [main] o.e.p.c.ServiceControllerSpringBootTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:10:39.195+03:00  INFO 34594 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:10:39.246+03:00  INFO 34594 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:10:41.117+03:00  INFO 34594 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:10:41.174+03:00  INFO 34594 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:10:41.211+03:00  INFO 34594 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:10:41.367+03:00  INFO 34594 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:10:41.405+03:00  INFO 34594 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:10:41.524+03:00  INFO 34594 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@726ef6aa
+2024-06-29T17:10:41.526+03:00  INFO 34594 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:10:42.599+03:00  INFO 34594 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:10:42.694+03:00  INFO 34594 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:10:42.989+03:00  WARN 34594 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:10:44.405+03:00  INFO 34594 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:10:44.406+03:00  INFO 34594 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:10:44.421+03:00  INFO 34594 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:10:44.445+03:00  INFO 34594 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 39 ms
+2024-06-29T17:10:44.517+03:00  INFO 34594 --- [PaymentService] [main] o.e.p.c.ServiceControllerSpringBootTest  : Started ServiceControllerSpringBootTest in 6.676 seconds (process running for 7.822)
+2024-06-29T17:10:44.914+03:00  INFO 34594 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:10:44.917+03:00  INFO 34594 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:10:44.923+03:00  INFO 34594 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:12:34.080+03:00  INFO 34915 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 34915 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:12:34.082+03:00  INFO 34915 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:12:35.038+03:00  INFO 34915 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:12:35.090+03:00  INFO 34915 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:12:36.610+03:00  INFO 34915 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:12:36.686+03:00  INFO 34915 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:12:36.732+03:00  INFO 34915 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:12:36.906+03:00  INFO 34915 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:12:36.948+03:00  INFO 34915 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:12:37.054+03:00  INFO 34915 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d5cd210
+2024-06-29T17:12:37.056+03:00  INFO 34915 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:12:38.063+03:00  INFO 34915 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:12:38.171+03:00  INFO 34915 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:12:38.878+03:00  WARN 34915 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:12:39.917+03:00  INFO 34915 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:12:39.917+03:00  INFO 34915 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:12:39.930+03:00  INFO 34915 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:12:39.950+03:00  INFO 34915 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 32 ms
+2024-06-29T17:12:40.020+03:00  INFO 34915 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.373 seconds (process running for 7.512)
+2024-06-29T17:12:40.391+03:00  INFO 34915 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:12:40.394+03:00  INFO 34915 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:12:40.402+03:00  INFO 34915 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:19:38.404+03:00  INFO 35422 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 35422 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:19:38.406+03:00  INFO 35422 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:19:39.421+03:00  INFO 35422 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:19:39.469+03:00  INFO 35422 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:19:41.169+03:00  INFO 35422 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:19:41.231+03:00  INFO 35422 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:19:41.268+03:00  INFO 35422 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:19:41.413+03:00  INFO 35422 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:19:41.451+03:00  INFO 35422 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:19:41.566+03:00  INFO 35422 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69ab2d6a
+2024-06-29T17:19:41.569+03:00  INFO 35422 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:19:42.571+03:00  INFO 35422 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:19:42.667+03:00  INFO 35422 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:19:43.323+03:00  WARN 35422 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:19:44.207+03:00  INFO 35422 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:19:44.207+03:00  INFO 35422 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:19:44.226+03:00  INFO 35422 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:19:44.246+03:00  INFO 35422 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 37 ms
+2024-06-29T17:19:44.324+03:00  INFO 35422 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.343 seconds (process running for 7.446)
+2024-06-29T17:19:44.691+03:00  INFO 35422 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:19:44.695+03:00  INFO 35422 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:19:44.712+03:00  INFO 35422 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-29T17:30:22.469+03:00  INFO 36428 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Starting PaymentControllerTest using Java 22.0.1 with PID 36428 (started by ivan in /home/ivan/Desktop/Ratatouille/PaymentService)
+2024-06-29T17:30:22.471+03:00  INFO 36428 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2024-06-29T17:30:23.485+03:00  INFO 36428 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-29T17:30:23.534+03:00  INFO 36428 --- [PaymentService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 JPA repository interfaces.
+2024-06-29T17:30:25.144+03:00  INFO 36428 --- [PaymentService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-29T17:30:25.211+03:00  INFO 36428 --- [PaymentService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-29T17:30:25.252+03:00  INFO 36428 --- [PaymentService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-29T17:30:25.394+03:00  INFO 36428 --- [PaymentService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-29T17:30:25.422+03:00  INFO 36428 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-29T17:30:25.542+03:00  INFO 36428 --- [PaymentService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4bf10fe1
+2024-06-29T17:30:25.544+03:00  INFO 36428 --- [PaymentService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-29T17:30:26.514+03:00  INFO 36428 --- [PaymentService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-29T17:30:26.633+03:00  INFO 36428 --- [PaymentService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:30:27.335+03:00  WARN 36428 --- [PaymentService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-29T17:30:28.306+03:00  INFO 36428 --- [PaymentService] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-29T17:30:28.307+03:00  INFO 36428 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-29T17:30:28.322+03:00  INFO 36428 --- [PaymentService] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-29T17:30:28.342+03:00  INFO 36428 --- [PaymentService] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 35 ms
+2024-06-29T17:30:28.424+03:00  INFO 36428 --- [PaymentService] [main] o.e.p.controllers.PaymentControllerTest  : Started PaymentControllerTest in 6.392 seconds (process running for 7.604)
+2024-06-29T17:30:28.803+03:00  INFO 36428 --- [PaymentService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-29T17:30:28.806+03:00  INFO 36428 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-29T17:30:28.816+03:00  INFO 36428 --- [PaymentService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
