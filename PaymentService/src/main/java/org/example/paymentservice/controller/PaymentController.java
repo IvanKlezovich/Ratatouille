@@ -26,6 +26,7 @@ public class PaymentController {
 
     @PostMapping("/pay_rollback")
     public ResponseEntity<String> payRollback(@RequestBody ModelForPayment model){
+        payService.payRollback(model.getOrderId());
         return ResponseEntity.ok("Payment rollback successful");
     }
 }

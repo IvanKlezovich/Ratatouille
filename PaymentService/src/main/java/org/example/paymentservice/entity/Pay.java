@@ -10,8 +10,9 @@ import lombok.Data;
 @Data
 public class Pay {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private long orderId;
     private long cost;
+
 }
