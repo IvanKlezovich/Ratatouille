@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: delivery-service
+  profiles:
+    active: dev
+  config:
+    import: optional:file:.env[.properties]
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 8228
+
+
