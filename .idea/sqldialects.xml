@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/PaymentService/src/main/resources/db/changelog/0.1/create-payment-table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/PaymentService/src/main/resources/db/changelog/0.1/insert-pay-table.sql" dialect="PostgreSQL" />
+  </component>
+</project>
