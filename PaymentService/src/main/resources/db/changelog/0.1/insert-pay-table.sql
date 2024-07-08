@@ -1,4 +1,11 @@
-INSERT INTO pay (order_id, status, cost)
-VALUES ('1', 'PAID', 100.00),
-       ('2', 'NOT_PAID', 50.50),
-       ('3', 'PAID', 105.20);
+INSERT INTO pay (orderId, cost, status) VALUES
+    (1, 100, 'PENDING'),
+    (2, 200, 'COMPLETED'),
+    (3, 300, 'FAILED'),
+    (4, 400, 'PENDING'),
+    (5, 500, 'COMPLETED'),
+    (6, 600, 'FAILED'),
+    (7, 700, 'PENDING'),
+    (8, 800, 'COMPLETED'),
+    (9, 900, 'FAILED'),
+    (10, 1000, 'PENDING');
