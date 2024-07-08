@@ -16,8 +16,4 @@ public class Dishes {
     private String name;
     private int count;
     private double price;
-
-    @ManyToOne
-    @JoinColumn(name = "order_id")
-    private Order order;
 }

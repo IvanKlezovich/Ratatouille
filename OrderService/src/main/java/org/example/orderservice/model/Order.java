@@ -3,6 +3,7 @@ package org.example.orderservice.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -17,10 +18,13 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToMany(mappedBy = "order")
-    private List<Dishes> dishes;
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "order_id")
+    private List<Dishes> dishes = new ArrayList<>();
 
     @Column(name = "order_cost", nullable = false)
     private double orderCost;
+
+    private String status;
 
 }

@@ -1,18 +1,17 @@
-package org.example.orderservice.dto;
+package org.example.orderservice.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderDto {
+public class DishesRequestDto {
     private int id;
-    private List<DishesDto> dishes;
-    private double orderCost;
+    private String name;
+    private int count;
+    private double price;
 }
