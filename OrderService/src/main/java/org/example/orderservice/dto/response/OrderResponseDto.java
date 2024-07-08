@@ -1,4 +1,4 @@
-package org.example.orderservice.dto;
+package org.example.orderservice.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DishesDto {
+public class OrderResponseDto {
     private int id;
-    private String name;
-    private int count;
-    private double price;
-    private OrderDto orderDto;
+    private double orderCost;
+    private String status;
 }

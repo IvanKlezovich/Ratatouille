@@ -1,31 +1,23 @@
 package org.example.restarauntservice.controller;
 
 import org.example.restarauntservice.dto.DishesDto;
-import org.example.restarauntservice.service.DishesService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@RestController
+@Validated
 @RequestMapping("/api/restaurant")
-public class DishesController {
-
-    private final DishesService dishesService;
-
-    public DishesController(DishesService dishesService) {
-        this.dishesService = dishesService;
-    }
+public interface DishesController {
 
     @GetMapping("/getListDishes")
-    public List<DishesDto> getListDishes() {
-        return dishesService.readDishes();
-    }
+    List<DishesDto> getListDishes();
 
     @PostMapping("/get_current_dishes")
-    public ResponseEntity<String> getCurrentDishes(@RequestBody DishesDto requestDto) {
-        dishesService.deleteCountDishesById(requestDto.getId(), requestDto.getCount());
-        return ResponseEntity.noContent().build();
-    }
+    ResponseEntity<String> getCurrentDishes(@RequestBody DishesDto requestDto);
 
 }

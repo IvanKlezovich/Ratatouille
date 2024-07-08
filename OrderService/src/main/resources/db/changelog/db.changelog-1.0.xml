@@ -7,29 +7,41 @@
 
     <changeSet id="1" author="evelinakunsmanaite">
         <createTable tableName="orders">
-            <column name="id" type="int">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="order_cost" type="double"/>
+            <column name="order_cost" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 
     <changeSet id="2" author="evelinakunsmanaite">
         <createTable tableName="dishes">
-            <column name="id" type="int">
+            <column name="id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="varchar(255)"/>
-            <column name="count" type="int"/>
-            <column name="price" type="double"/>
-            <column name="order_id" type="int"/>
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="count" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="order_id" type="int">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
-    </changeSet>
 
-    <changeSet id="3" author="evelinakunsmanaite">
         <addForeignKeyConstraint baseTableName="dishes"
                                  baseColumnNames="order_id"
                                  referencedTableName="orders"
-                                 referencedColumnNames="id" constraintName=""/>
+                                 referencedColumnNames="id"
+                                 constraintName="fk_dishes_order"/>
     </changeSet>
 </databaseChangeLog>
