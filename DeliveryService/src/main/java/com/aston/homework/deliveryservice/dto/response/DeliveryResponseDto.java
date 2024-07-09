@@ -14,6 +14,6 @@ public class DeliveryResponseDto {
 
     private String message;
 
-    private DeliveryStatus status;
+    private String status;
 
 }

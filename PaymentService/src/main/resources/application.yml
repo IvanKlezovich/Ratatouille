@@ -22,3 +22,38 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         default_schema: public
+  kafka:
+    bootstrap-servers: localhost:9092,localhost:9093
+    listener:
+      ack-mode: record
+    producer:
+      client-id: ${spring.application.name}
+      acks: all
+      properties:
+        delivery.timeout.ms: 30000
+        linger.ms: 0
+        request.timeout.ms: 30000
+        enable.idempotence: true
+        max.in.flight.requests.per.connection: 5
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+      retries: 3
+    consumer:
+      group-id: ${spring.application.name}
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+kafka-topic-name:
+  payment-request-topic: payment-request-topic
+  payment-response-topic: payment-response-topic
+  delivery-request-topic: delivery-request-topic
+  delivery-response-topic: delivery-response-topic
+  order-compensation-topic: order-compensation-topic
+
+
+topic:
+  partitions-count: 3
+  replicas-count: 2
+  min-insync-replicas: 1

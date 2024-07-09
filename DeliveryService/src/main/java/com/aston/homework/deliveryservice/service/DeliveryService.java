@@ -5,6 +5,6 @@ import com.aston.homework.deliveryservice.dto.response.DeliveryResponseDto;
 
 public interface DeliveryService {
 
-    DeliveryResponseDto deliverOrder(DeliveryRequestDto requestDto);
+    boolean deliverOrder(DeliveryRequestDto requestDto);
 
 }

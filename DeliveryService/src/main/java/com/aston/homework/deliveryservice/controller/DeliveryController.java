@@ -13,6 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface DeliveryController {
 
     @PostMapping("/{orderId}")
-    ResponseEntity<DeliveryResponseDto> deliver(@NotBlank @PathVariable String orderId);
+    ResponseEntity<Boolean> deliver(@NotBlank @PathVariable String orderId);
 
 }

@@ -12,13 +12,12 @@ public class Pay {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "orderid")
+    @Column(name = "orderId")
     private long orderId;
 
     @Column(name = "cost")
     private long cost;
 
     @Column(name = "status")
-    @Enumerated(EnumType.STRING)
-    private PayStatus status;
+    private String status;
 }

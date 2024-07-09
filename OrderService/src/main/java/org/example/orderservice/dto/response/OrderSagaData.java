@@ -9,7 +9,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderResponseDto {
-    private int id;
+public class OrderSagaData {
+
+    private long orderId;
+
     private String status;
+
+    private String paymentStatus;
+
+    private String deliveryStatus;
+
 }

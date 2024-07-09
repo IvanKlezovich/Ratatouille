@@ -1,13 +1,12 @@
 package org.example.orderservice.controller;
 
 import org.example.orderservice.dto.request.DishesRequestDto;
+import org.example.orderservice.dto.request.OrderRequestDto;
 import org.example.orderservice.dto.response.OrderResponseDto;
+import org.example.orderservice.dto.response.OrderSagaData;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Validated
 @RequestMapping("/api/order")
@@ -22,6 +21,6 @@ public interface OrderController {
     ResponseEntity<Void> deleteOrder(@PathVariable int id);
 
     @PostMapping("/buy")
-    ResponseEntity<Void> buyOrder(@RequestBody OrderResponseDto orderResponseDto);
+    ResponseEntity<OrderSagaData> buyOrder(@RequestBody OrderRequestDto orderRequestDto);
 
 }

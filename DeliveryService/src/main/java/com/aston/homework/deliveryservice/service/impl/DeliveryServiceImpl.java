@@ -10,6 +10,8 @@ import com.aston.homework.deliveryservice.repository.DeliveryRepository;
 import com.aston.homework.deliveryservice.service.DeliveryService;
 import com.aston.homework.deliveryservice.utils.DeliveryMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,36 +22,40 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class DeliveryServiceImpl implements DeliveryService {
 
     private static final String DELIVERY_SUCCESS_MESSAGE = "Order delivered successfully.";
-    private static final String DELIVERY_FAILURE_MESSAGE = "Cannot deliver at the moment.";
 
     private final DeliveryRepository deliveryRepository;
 
     private final AtomicInteger requestCounter = new AtomicInteger();
 
-    @Transactional
-    public DeliveryResponseDto deliverOrder(DeliveryRequestDto requestDto) {
+    private final KafkaTemplate<String, Object> deliveryKafkaTemplate;
+
+    @KafkaListener(topics = "delivery-request-topic", groupId = "delivery-group")
+    public void handleDeliveryRequest(DeliveryRequestDto deliveryRequestDto) {
+        DeliveryResponseDto deliveryResponse = new DeliveryResponseDto();
+        deliveryResponse.setOrderId(deliveryRequestDto.getOrderId());
+        boolean deliverySuccess = deliverOrder(deliveryRequestDto);
+
+        if (deliverySuccess) {
+            deliveryResponse.setStatus("DELIVERY_SUCCESS");
+        } else {
+            deliveryResponse.setStatus("DELIVERY_FAILED");
+        }
+        deliveryKafkaTemplate.send("delivery-response-topic", deliveryResponse);
+    }
+
+    public boolean deliverOrder(DeliveryRequestDto requestDto) {
         boolean canDeliver = checkDeliveryAvailability();
 
         Delivery delivery = DeliveryMapper.toEntity(requestDto);
 
         if (canDeliver) {
-            delivery.setDeliveryStatus(DeliveryStatus.DELIVERED);
+            delivery.setDeliveryStatus(DeliveryStatus.DELIVERED.toString());
             delivery.setMessage(DELIVERY_SUCCESS_MESSAGE);
-        } else {
-            delivery.setDeliveryStatus(DeliveryStatus.NOT_DELIVERED);
-            delivery.setMessage(DELIVERY_FAILURE_MESSAGE);
-
-            DeliveryNotAvailabilityResponseDto response = new DeliveryNotAvailabilityResponseDto();
-            response.setOrderId(requestDto.getOrderId());
-            response.setMessage(delivery.getMessage());
-            response.setStatus(delivery.getDeliveryStatus());
-
             deliveryRepository.save(delivery);
-            throw new DeliveryException(DELIVERY_FAILURE_MESSAGE, response);
+            return true;
+        } else {
+            return false;
         }
-
-        Delivery savedDelivery = deliveryRepository.save(delivery);
-        return DeliveryMapper.toDto(savedDelivery);
     }
 
     boolean checkDeliveryAvailability() {

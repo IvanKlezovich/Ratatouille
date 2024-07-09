@@ -17,6 +17,6 @@ public final class PayMapper {
     }
 
     public PayResponseDto toPayRequestDto(Pay pay) {
-        return new PayResponseDto(pay.getId());
+        return new PayResponseDto(pay.getId(), pay.getStatus());
     }
 }

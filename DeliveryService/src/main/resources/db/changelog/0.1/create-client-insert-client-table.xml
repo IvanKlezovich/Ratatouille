@@ -6,7 +6,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="V0.1-06.07.2024" author="N1k">
-        <sqlFile path="db/changelog/0.1/create-pay-table.sql"/>
+        <sqlFile path="db/changelog/0.1/create-delivery-table.sql"/>
         <rollback>
             <delete tableName="delivery"/>
         </rollback>

@@ -17,11 +17,12 @@ public class PaymentControllerImpl implements PaymentController {
 
     private final PayService payService;
 
-    public ResponseEntity<PayResponseDto> pay(@RequestBody PayRequestDto payRequestDto){
+    public ResponseEntity<Boolean> pay(@RequestBody PayRequestDto payRequestDto){
         return ResponseEntity.ok(payService.pay(payRequestDto));
     }
 
-    public ResponseEntity<PayResponseDto> payRollback(@RequestBody PayRequestDto payResponseDto){
-        return ResponseEntity.ok(new PayResponseDto(1L));
+    @Override
+    public ResponseEntity<PayResponseDto> payRollback(PayRequestDto payResponseDto) {
+        return null;
     }
 }

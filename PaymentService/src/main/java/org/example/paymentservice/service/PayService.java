@@ -5,7 +5,7 @@ import org.example.paymentservice.dto.response.PayResponseDto;
 
 public interface PayService {
 
-    PayResponseDto pay(PayRequestDto payRequestDtoDto);
+    boolean pay(PayRequestDto payRequestDtoDto);
 
-    PayResponseDto payRollback(long orderId);
+    void payRollback(long orderId);
 }

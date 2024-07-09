@@ -10,4 +10,5 @@ import org.example.paymentservice.data.constant.PayStatus;
 @NoArgsConstructor
 public class PayResponseDto {
     private long orderId;
+    private String status;
 }

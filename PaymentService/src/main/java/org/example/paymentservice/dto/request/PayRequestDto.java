@@ -11,5 +11,5 @@ import org.example.paymentservice.data.constant.PayStatus;
 public class PayRequestDto {
     private long orderId;
     private long orderCost;
-    private PayStatus status;
+    private String status;
 }

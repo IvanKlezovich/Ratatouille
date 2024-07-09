@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface PaymentController {
 
     @PostMapping("/pay")
-    ResponseEntity<PayResponseDto> pay(@RequestBody PayRequestDto payResponseDto);
+    ResponseEntity<Boolean> pay(@RequestBody PayRequestDto payResponseDto);
 
     @PostMapping("/pay_rollback")
     ResponseEntity<PayResponseDto> payRollback(@RequestBody PayRequestDto payResponseDto);

@@ -25,9 +25,8 @@ public class Delivery {
     @Column(name = "message")
     private String message;
 
-    @Column(name = "status", nullable = false)
-    @Enumerated(EnumType.STRING)
-    private DeliveryStatus deliveryStatus;
+    @Column(name = "status")
+    private String deliveryStatus;
 }
 
 

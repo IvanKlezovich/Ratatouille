@@ -1,5 +1,6 @@
 package org.example.orderservice.dto.response;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +10,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderResponseDto {
+public class OrderDeliveryResponseDto {
+
     private int id;
+
     private String status;
+
 }
+

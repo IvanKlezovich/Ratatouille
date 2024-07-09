@@ -1,13 +1,24 @@
+example:
+  kafka:
+    consumer-enabled: ${consumer-enabled:true}
+
 spring:
   application:
-    name: delivery-service
-  profiles:
-    active: dev
-  config:
-    import: optional:file:.env[.properties]
-  web:
-    resources:
-      add-mappings: false
+    name: OrderService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
 
   kafka:
     bootstrap-servers: localhost:9092,localhost:9093
@@ -30,6 +41,7 @@ spring:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
 kafka-topic-name:
   payment-request-topic: payment-request-topic
   payment-response-topic: payment-response-topic
@@ -43,6 +55,4 @@ topic:
   replicas-count: 2
   min-insync-replicas: 1
 server:
-  port: 8228
-
-
+  port: 8230

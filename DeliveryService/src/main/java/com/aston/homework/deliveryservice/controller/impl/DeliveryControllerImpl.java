@@ -17,9 +17,9 @@ public class DeliveryControllerImpl implements DeliveryController {
     private final DeliveryService deliveryService;
 
     @Override
-    public ResponseEntity<DeliveryResponseDto> deliver(@PathVariable String orderId) {
+    public ResponseEntity<Boolean> deliver(@PathVariable String orderId) {
         DeliveryRequestDto requestDto = new DeliveryRequestDto(orderId);
-        DeliveryResponseDto response = deliveryService.deliverOrder(requestDto);
+        boolean response = deliveryService.deliverOrder(requestDto);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }
